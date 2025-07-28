@@ -43,7 +43,8 @@
     "build": "bob build",
     "start": "(cd example && react-native start)",
     "test:lint": "eslint $(git ls-files '*.js' '*.ts' '*.tsx')",
-    "test:ts": "tsc"
+    "test:ts": "tsc",
+    "prepare": "yarn build"
   },
   "installConfig": {
     "hoistingLimits": "workspaces"
