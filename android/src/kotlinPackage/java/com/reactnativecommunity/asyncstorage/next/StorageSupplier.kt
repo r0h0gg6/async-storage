@@ -23,7 +23,6 @@ private const val TABLE_NAME = "Storage"
 private const val COLUMN_KEY = "key"
 private const val COLUMN_VALUE = "value"
 
-
 @Entity(tableName = TABLE_NAME)
 data class Entry(
     @PrimaryKey @ColumnInfo(name = COLUMN_KEY) val key: String,
@@ -73,7 +72,6 @@ internal interface StorageDao {
     @Query("DELETE FROM $TABLE_NAME")
     suspend fun clear()
 }
-
 
 /**
  * Previous version of AsyncStorage is violating the SQL standard (based on bug in SQLite),
