@@ -54,7 +54,7 @@ public class AsyncStoragePackage extends TurboReactPackage {
                 @Override
                 public Map<String, ReactModuleInfo> getReactModuleInfos() {
                     final Map<String, ReactModuleInfo> reactModuleInfoMap = new HashMap<>();
-                    boolean isTurboModule = BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
+                    boolean isTurboModule = false;
 
                     Class<? extends NativeModule>[] moduleList =
                             new Class[] {
